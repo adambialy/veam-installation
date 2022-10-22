@@ -10,13 +10,16 @@ apt install squashfs-tools libisoburn1 xorriso
 apt-get install linux-headers-$(uname -r)
 apt install cifs-utils nfs-common # for using with samba and nfs shares
 ```
-Add repo:
-
+Add repo and install veeam
+--------------------
 ```
 dpkg -i veeam-release-deb_1.0.8_amd64.deb
+apt update
+apt install veeam
 ```
 
-Run veeam
+Run veeam and configure backup job.
+------------------
 ```
 # veeam
 ```
