@@ -47,6 +47,9 @@ Run veeam and configure backup job.
 <img src="./veeam11.png">
 
 
+Check if veeam service is running and enabled
+---------------
+
 ```
 root@srv02:/tmp# systemctl status veeamservice
 ● veeamservice.service - Veeam Agent for Linux service daemon
@@ -66,5 +69,7 @@ Oct 22 13:02:55 srv02 veeamservice[1133161]: Initializing log file [/var/log/vee
 Oct 22 13:02:55 srv02 systemd[1]: Started Veeam Agent for Linux service daemon.
 Oct 22 13:08:48 srv02 crontab[1134929]: (root) BEGIN EDIT (root)
 Oct 22 13:08:48 srv02 crontab[1134929]: (root) END EDIT (root)
+root@srv02:~# systemctl is-enabled veeamservice
+enabled
 ```
 
